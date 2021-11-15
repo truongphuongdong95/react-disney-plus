@@ -4,19 +4,19 @@ function Viewers() {
     return (
         <Container>
             <Wrap>
-                <img src="/images/viewers-disney.png" />
+                <img src={process.env.PUBLIC_URL + '/images/viewers-disney.png'} />
             </Wrap>
             <Wrap>
-                <img src="/images/viewers-pixar.png" />
+                <img src={process.env.PUBLIC_URL + '/images/viewers-pixar.png'} />
             </Wrap>
             <Wrap>
-                <img src="/images/viewers-marvel.png" />
+                <img src={process.env.PUBLIC_URL + '/images/viewers-marvel.png'} />
             </Wrap>
             <Wrap>
-                <img src="/images/viewers-starwars.png" />
+                <img src={process.env.PUBLIC_URL + '/images/viewers-starwars.png'} />
             </Wrap>
             <Wrap>
-                <img src="/images/viewers-national.png" />
+                <img src={process.env.PUBLIC_URL + '/images/viewers-national.png'} />
             </Wrap>
 
         </Container>

@@ -85,18 +85,18 @@ function DetailSeries() {
       </Title>
       <Controls>
         <PlayButton>
-          <img src="/images/play-icon-black.png" />
+          <img src={process.env.PUBLIC_URL + '/images/play-icon-black.png'} />
           <span>Play</span>
         </PlayButton>
         <TrailerButton onClick={() => handleClickTrailer(series)}>
-          <img src="/images/play-icon-white.png" />
+          <img src={process.env.PUBLIC_URL + '/images/play-icon-white.png'} />
           <span>Trailer</span>
         </TrailerButton>
         <AddButton onClick={addWatchList}>
           <span>+</span>
         </AddButton>
         <GroupButton>
-          <img src="/images/group-icon.png" />
+          <img src={process.env.PUBLIC_URL + '/images/group-icon.png'} />
         </GroupButton>
       </Controls>
       <SubTitle>

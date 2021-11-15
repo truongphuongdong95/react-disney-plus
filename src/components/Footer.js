@@ -7,20 +7,20 @@ function Footer() {
     <Foot>
       <MenuFooter>
         <li>
-          <img src="/images/home-icon.svg" />
-          <Link to="/">Home</Link>
+          <img src={process.env.PUBLIC_URL + '/images/home-icon.svg'} />
+          <Link to="/react-disney-plus">Home</Link>
         </li>
         <li>
-          <img src="/images/search-icon.svg" />
-          <Link to="/search">Search</Link>
+          <img src={process.env.PUBLIC_URL + '/images/search-icon.svg'} />
+          <Link to="/react-disney-plus/search">Search</Link>
         </li>
         <li>
-          <img src="/images/watchlist-icon.svg" />
-          <Link to="/watch-list">WatchList</Link>
+          <img src={process.env.PUBLIC_URL + '/images/watchlist-icon.svg'} />
+          <Link to="/react-disney-plus/watch-list">WatchList</Link>
         </li>
         <li>
-          <img src="/images/original-icon.svg" />
-          <Link to="/originals">Originals</Link>
+          <img src={process.env.PUBLIC_URL + '/images/original-icon.svg'} />
+          <Link to="/react-disney-plus/originals">Originals</Link>
         </li>
       </MenuFooter>
     </Foot>

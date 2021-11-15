@@ -55,7 +55,7 @@ function Header() {
 
   return (
     <Nav>
-      <Logo src="/images/logo.svg" />
+      <Logo src={process.env.PUBLIC_URL + '/images/logo.svg'} />
       {!userName ? (
         <LoginContainer>
           <Login onClick={signIn}>Login</Login>
@@ -63,30 +63,30 @@ function Header() {
       ) : (
         <>
           <NavMenu>
-            <Link to="/">
-              <img src="/images/home-icon.svg" />
+            <Link to="/react-disney-plus">
+              <img src={process.env.PUBLIC_URL + '/images/home-icon.svg'} />
               <span>Home</span>
             </Link>
 
-            <Link to="/search">
-              <img src="/images/search-icon.svg" />
+            <Link to="/react-disney-plus/search">
+              <img src={process.env.PUBLIC_URL + '/images/search-icon.svg'} />
               <span>Search</span>
             </Link>
 
-            <Link to="/watch-list">
-              <img src="/images/watchlist-icon.svg" />
+            <Link to="/react-disney-plus/watch-list">
+              <img src={process.env.PUBLIC_URL + '/images/watchlist-icon.svg'} />
               <span>Watchlist</span>
             </Link>
-            <Link to="/originals">
-              <img src="/images/original-icon.svg" />
+            <Link to="/react-disney-plus/originals">
+              <img src={process.env.PUBLIC_URL + '/images/original-icon.svg'} />
               <span>Original</span>
             </Link>
-            <Link to="/movie-up-coming">
-              <img src="/images/movie-icon.svg" />
+            <Link to="/react-disney-plus/movie-up-coming">
+              <img src={process.env.PUBLIC_URL + '/images/movie-icon.svg'} />
               <span>Movies</span>
             </Link>
-            <Link to="/series-tv">
-              <img src="/images/series-icon.svg" />
+            <Link to="/react-disney-plus/series-tv">
+              <img src={process.env.PUBLIC_URL + '/images/series-icon.svg'} />
               <span>Series</span>
             </Link>
           </NavMenu>

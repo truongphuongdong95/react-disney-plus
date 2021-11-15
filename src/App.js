@@ -19,39 +19,39 @@ function App() {
       <Router>
         <Header />
         <Switch>
-          <Route path="/login">
+          <Route path="/react-disney-plus/login">
             <Login />
           </Route>
 
-          <Route path="/detail/:id">
+          <Route path="/react-disney-plus/detail/:id">
             <Detail />
           </Route>
 
-          <Route path="/detail-series/:id">
+          <Route path="/react-disney-plus/detail-series/:id">
             <DetailSeries />
           </Route>
 
-          <Route path="/series-tv">
+          <Route path="/react-disney-plus/series-tv">
             <SeriesTV />
           </Route>
 
-          <Route path="/movie-up-coming">
+          <Route path="/react-disney-plus/movie-up-coming">
             <MovieCinema />
           </Route>
 
-          <Route path="/originals">
+          <Route path="/react-disney-plus/originals">
             <Originals />
           </Route>
 
-          <Route exact path="/watch-list">
+          <Route exact path="/react-disney-plus/watch-list">
             <WatchList />
           </Route>
 
-          <Route exact path="/search">
+          <Route exact path="/react-disney-plus/search">
             <Search />
           </Route>
 
-          <Route path="/">
+          <Route path="/react-disney-plus">
             <Home />
           </Route>
         </Switch>
