@@ -16,7 +16,7 @@ function Series(props) {
       <Content>
         {series.map((serie) => (
           <Wrap>
-            <Link to={`/detail-series/${serie.id}`}>
+            <Link to={`/react-disney-plus/detail-series/${serie.id}`}>
               <img key={serie.id} src={`${base_url}${serie.poster_path}`} />
             </Link>
           </Wrap>

@@ -17,11 +17,11 @@ function Movies(props) {
         {movies.map((movie) => (
           <Wrap>
             {movie.media_type == "movie" || !movie.media_type   ? (
-              <Link to={`/detail/${movie.id}`}>
+              <Link to={`/react-disney-plus/detail/${movie.id}`}>
                 <img key={movie.id} src={`${base_url}${movie.poster_path}`} />
               </Link>
             ) : (
-              <Link to={`/detail-series/${movie.id}`}>
+              <Link to={`/react-disney-plus/detail-series/${movie.id}`}>
                 <img key={movie.id} src={`${base_url}${movie.poster_path}`} />
               </Link>
             )}
